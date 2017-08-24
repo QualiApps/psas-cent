@@ -14,11 +14,9 @@ def command_output(cmd):
         exit_code = proc.poll()
 
         if exit_code != 0:
-            print std_err
 	    return _ERROR_MESS
 
     except (OSError, EnvironmentError) as e:
-        print e
         return _ERROR_MESS
 
     return std_out
