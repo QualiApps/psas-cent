@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>P.SAS</title>
+<style>
+        form {
+          width: 420px;
+        }
+        div {
+          margin-bottom: 20px;
+          display: block;
+        }
+        label {
+          display: block;
+          width: 240px;
+        }
+</style>
+</head>
+<body>
+<h1>P.SAS</h1>
+
+<form method="post" action="{{ url_for('result') }}">
+    <div>
+      <label for="psas">Please past your text bellow</label>
+      <input name="psas_input" id="psas" value="">
+    </div>
+    <div>
+      <button>Send request</button>
+    </div>
+</form>
+
+</body>
+</html>
